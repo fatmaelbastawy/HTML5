@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab2</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Solitreo&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/011e6cb027.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</script> -->
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://www.google.com"> <i id="home" class="fa-solid fa-house"></i> </a></li>
+            <li> <a href="https://www.twitter.com"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="http://www.instgram.com"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="https://www.facebook.com"><i class="fa-solid fa-earth-americas"></i></a></li>
+            <li><a href="https://www.linkedin.com"><i class="fa-regular fa-trash-can"></i></a></li>
+        </ul>
+    </nav><br>
+    <br><br><br>
+    <div class="p_one">
+        hello there , how are you doing ?
+
+    </div>
+
+
+    <div class="p_two">hello there , how are you doing ?</div>
+
+    <br><br><br>
+
+    <!-- <i class="fa-sharp fa-solid fa-house-chimney"></i> -->
+    <div class="container">
+        <div class="contact_chip">Fatma </div>
+        <img onclick="openChip()" class="mm" src="download.jpeg" alt=""><span class="close_button">&times; </span>
+
+
+    </div>
+    <br><br><br><br><br>
+    <!-- //5// -->
+    <div class="gallery">
+        <img class="img" src=".hunter.jpg" alt="">
+        <img class="img" src="hair.jpg" alt="">
+        <img class="img" src="main-qimg-5ab4161efdf90a08eb691c948a0d9680-lq.jpg" alt="">
+    </div>
+
+
+
+    <script>
+        var x = document.getElementsByClassName("close_button")[0];
+        console.log(x)
+        var contact = document.getElementsByClassName("contact_chip")[0];
+        x.addEventListener('click', function closeChip() {
+            
+                contact.style.display = "none";
+                contact.style.color = "white";
+                x.style.color="white";
+            }
+            
+        )
+
+        var img = document.getElementsByClassName("mm")[0];
+
+        function openChip() {
+            console.log(contact);
+           
+           
+                contact.style.display = "block";
+                contact.style.color = "rgb(230, 230, 230)"
+
+            }
+            
+        
+
+
+    </script>
+
+
+</body>
+
+</html>
